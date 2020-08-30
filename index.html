@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/Basc.css" />
+<link rel="stylesheet" type="text/css" href="css/video.css" />
+<style type="text/css">
+			.xh_main{width: 1170px;margin: 0 auto;position: relative;}
+			.padt100{padding-top: 100px;}
+			@media only screen and (max-width:1200px){
+				.xh_main{width: 100%;}
+			}
+		</style>
+</head>
+<body>
+<div class="xh_main padt100" style="z-index: 9;">
+<div class="video-wrap">
+
+<video class="video" poster="images/video.png">
+<source src="https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Bastion_TheLastBastion.mp4" type="video/mp4"></source>
+</video>
+
+<div class="video-controls">
+
+<div class="video-controls-bg"></div>
+
+<div class="loading-line">
+<em class="loading_em"></em>
+<span class="loading_span"></span>
+</div>
+
+<div class="video-btn"></div>
+
+<div class="video-time">
+<span class="video-now">00:00</span>
+/
+<span class="video-count">00:00</span>
+</div>
+
+<div data-videofull='false' class="video-fullscreen"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+<script type="text/javascript">
+	$(function(event){
+		new myVideo(event,$(".video-wrap"));
+	})
+</script>
